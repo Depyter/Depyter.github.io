@@ -34,9 +34,14 @@ body {
 }
 
 :root {
-    --main-bg-color: #ed489a;
-    --main-bg-color-two: #FFAA00;
-    --accent-bg-color: #EEECE8;
+    --main-color: #fdffa1;
+    --main-color-two: #f3b600;
+    --main-color-three: #f38500;
+    --main-color-four: #f14b00;
+    --main-color-five: #f3004c;
+    --main-color-six: #f300b2;
+    --main-color-seven: #b200ff;
+    --main-color-eight: #6600ff;
 
     --main-font-type: 'Maragsa', serif;
 }
@@ -70,9 +75,6 @@ body {
 
 .sub-text:hover {
   color: rgb(252,176,59) !important;
-}
-.spectrum-pink {
-    background-color: var(--main-bg-color);
 }
 
 /* LOGO IMAGE
@@ -113,6 +115,21 @@ body {
   height: 32rem;
 }
 
+.text-right>p {
+  margin-left: auto ;
+  max-width: 35ch;
+}
+
+.text-left>p {
+  margin-right:auto;
+  max-width: 35ch;
+}
+
+.text-center>p {
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 35ch;
+}
 .carousel-item>img {
   position: absolute;
   top: 50%;
@@ -125,6 +142,23 @@ body {
   -moz-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%,-50%);
+}
+
+.button-rainbow {
+  color: white;
+  background-color: var(--main-color-two);
+  box-shadow:
+  3px 3px 0px var(--main-color-three),
+  6px 6px 0px var(--main-color-four),
+  9px 9px 0px var(--main-color-five),
+  12px 12px 0px var(--main-color-six),
+  15px 15px 0px var(--main-color-seven),
+  18px 18px 0px var(--main-color-eight);
+}
+
+.button-rainbow:hover {
+  box-shadow: none;
+  transition: box-shadow .15s ease-in-out, color .15 ease-in-out;
 }
 
 /* MARKETING CONTENT
