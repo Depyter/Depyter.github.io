@@ -119,7 +119,7 @@ body {
   left: 50%;
   min-width: 100%;
   height: 32rem;
-  object-fit: cover;
+  object-fit: cover !important;
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
