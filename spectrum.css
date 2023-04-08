@@ -28,7 +28,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
+  padding-top: 4.25rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
@@ -58,12 +58,8 @@ body {
     font-size: 1.75rem;
     letter-spacing: 1px;
     font-weight: 700;
-    margin-right: 0.5rem !important;
+    margin-right: 0.75rem !important;
     transition: color .25s ease-in-out,background-color .25s ease-in-out,border-color .25s ease-in-out;
-}
-
-.main-text:hover {
-  color: rgb(252,176,59) !important;
 }
 
 .sub-text {
@@ -74,19 +70,45 @@ body {
 }
 
 .sub-text:hover {
-  color: rgb(252,176,59) !important;
+  color: black !important;
 }
 
-/* LOGO IMAGE
+.text-rainbow {
+  color: white;
+  text-shadow: 1px 1px 0px var(--main-color-three),
+  2px 2px 1px var(--main-color-four),
+  3px 3px 1px var(--main-color-five),
+  4px 4px 1px var(--main-color-six),
+  5px 5px 1px var(--main-color-seven),
+  6px 6px 1px var(--main-color-eight);
+  transition: .25s ease-in-out;
+}
+
+
+.text-rainbow:hover {
+  color: black;
+  text-shadow: none;
+  transition: .25s ease-in-out, text-shadow .15s ease-in-out;
+}
+
+/* LOGO IMAGE AND NAVBAR
 -------------------------------------------- */
 
-.spectrum-logo {
+.navbar {
+  background-color: var(--main-color-two);
+  box-shadow: 0px 1px 5px;
+}
+
+
+.nav-item>a {
+  color: white !important;
+}
+
+
+#spectrum-logo {
   height: 1.75rem;
   margin-right: 1rem;
 }
-
-/* BOOTSTRAPISH CLASSES
--------------------------------------------- */
 
 .no-space {
   justify-content: flex-start !important;
@@ -95,6 +117,11 @@ body {
 .auto-margin-left {
   margin-left: auto;
 }
+
+/* BOOTSTRAPISH CLASSES
+-------------------------------------------- */
+
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------- */
@@ -113,6 +140,7 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
+  transition: .9s ease-in-out;
 }
 
 .text-right>p {
@@ -148,12 +176,12 @@ body {
   color: white;
   background-color: var(--main-color-two);
   box-shadow:
-  3px 3px 0px var(--main-color-three),
-  6px 6px 0px var(--main-color-four),
-  9px 9px 0px var(--main-color-five),
-  12px 12px 0px var(--main-color-six),
-  15px 15px 0px var(--main-color-seven),
-  18px 18px 0px var(--main-color-eight);
+  3px 3px 1px var(--main-color-three),
+  6px 6px 1px var(--main-color-four),
+  9px 9px 1px var(--main-color-five),
+  12px 12px 1px var(--main-color-six),
+  15px 15px 1px var(--main-color-seven),
+  18px 18px 1px var(--main-color-eight);
 }
 
 .button-rainbow:hover {
