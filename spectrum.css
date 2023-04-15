@@ -29,7 +29,6 @@
 
 body {
   padding-top: 4.25rem;
-  padding-bottom: 3rem;
 }
 
 :root {
@@ -93,16 +92,18 @@ body {
 /* LOGO IMAGE AND NAVBAR
 -------------------------------------------- */
 
-.navbar {
-  background-image: linear-gradient(to right, #f3b600, #ff8b26, #ff5951, #ff1c80, #f300b2);
-  opacity: 0.8;
-  transition: 0.25s ease-in-out;
-  box-shadow: 0px 1px 5px;
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
-.navbar:hover {
-  opacity: 1;
-  transition: 0.25s ease-in-out;
+.navbar-toggler-icon {
+  background-image: url(/assets/logo/burger-solid.svg);
+}
+
+.navbar {
+  background-image: linear-gradient(to right, #f3b600, #ff8b26, #ff5951, #ff1c80, #f300b2);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 1px 5px;
 }
 
 
@@ -230,9 +231,20 @@ body {
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
-  letter-spacing: -.05rem;
+  letter-spacing: 0.05rem;
 }
 
+.footer {
+  margin-top: 3.25rem;
+  max-width: none;
+  padding: 1em;
+  background-image: linear-gradient(to right, #f3b600, #ff6f1e, #ff005f, #fa00ad, #6600ff);
+}
+
+.footer>p {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -248,6 +260,15 @@ body {
 
   .featurette-heading {
     font-size: 50px;
+  }
+
+  .navbar {
+    opacity: 0.85;
+  }
+
+  .navbar:hover {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
   }
 
 }
