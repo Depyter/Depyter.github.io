@@ -189,7 +189,7 @@ body {
 -------------------------------------------- */
 
 .ict-background {
-  background-image: url(/assets/images/ICT_PICTURE.jpeg);
+  background-image: url(/assets/images/ICT_PICTURE.jpg);
   background-position: center;
   background-size: cover;
   background-color: rgb(74, 74, 74);
@@ -284,6 +284,7 @@ body {
   max-width: 100%;
   object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 /* Center align the text within the three columns below the carousel */
@@ -370,7 +371,7 @@ body {
   }
 
   .five-x-five {
-    max-height: 500px;
+    max-height: 350px;
   }
 }
 
