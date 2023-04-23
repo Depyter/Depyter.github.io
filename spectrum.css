@@ -7,6 +7,11 @@
     src: url(assets/fonts/Maragsƒ.otf);
 }
 
+@font-face {
+  font-family: Amateur Camcorder;
+  src: url(/assets/fonts/Amateur\ Camcorder.otf);
+}
+
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -42,10 +47,19 @@ body {
     --main-color-eight: #6600ff;
 
     --main-font-type: 'Maragsa', serif;
+    --accent-font-type: 'Amateur Camcorder', serif;
 }
 
 /* GLOBAL CLASSES
 -------------------------------------------- */
+
+.default-font {
+  font-family: var(--bs-font-sans-serif);
+}
+
+.font-amateur {
+  font-family: var(--accent-font-type);
+}
 
 .font-maragsa {
   font-family: var(--main-font-type);
@@ -71,6 +85,30 @@ body {
   color: black !important;
 }
 
+.rainbow-plus {
+  color: white;
+  text-shadow: 
+  1px 1px 1px var(--main-color-two),
+  2px  2px 1px var(--main-color-three),
+  3px  3px 1px var(--main-color-four),
+  4px  4px 1px var(--main-color-five),
+    5px  5px 1px var(--main-color-six),
+    6px 6px 1px var(--main-color-seven),
+    7px  7px 1px var(--main-color-eight);
+  transition: .25s ease-in-out;
+}
+
+.rainbow-only {
+  color: white;
+  text-shadow: 1px 1px 0px var(--main-color-three),
+  2px 2px 1px var(--main-color-four),
+  3px 3px 1px var(--main-color-five),
+  4px 4px 1px var(--main-color-six),
+  5px 5px 1px var(--main-color-seven),
+  6px 6px 1px var(--main-color-eight);
+  transition: .25s ease-in-out;
+}
+
 .text-rainbow {
   color: white;
   text-shadow: 1px 1px 0px var(--main-color-three),
@@ -82,15 +120,37 @@ body {
   transition: .25s ease-in-out;
 }
 
-
 .text-rainbow:hover {
   color: black;
   text-shadow: none;
   transition: .25s ease-in-out, text-shadow .15s ease-in-out;
 }
 
+.darkish {
+  background-color: rgb(144, 144, 144) !important;
+  background-blend-mode: multiply;
+}
+
+.darken {
+  background-color: rgb(74, 74, 74) !important;
+  background-blend-mode: multiply;
+}
+
+.image-correction {
+  background-position: center;
+  background-size: cover;
+}
+
+.flex-equal>* {
+  flex: 1;
+}
+
 /* LOGO IMAGE AND NAVBAR
 -------------------------------------------- */
+
+.spectrum-logo {  
+  height: calc(1.5rem + 3.5vw);
+}
 
 .navbar-toggler:focus {
   box-shadow: none;
@@ -113,7 +173,7 @@ body {
 
 
 #spectrum-logo {
-  height: 1.75rem;
+  height: 3.25rem;
   margin-right: 1rem;
 }
 
@@ -125,10 +185,30 @@ body {
   margin-left: auto;
 }
 
-/* BOOTSTRAPISH CLASSES
+/* MISC CLASSES
 -------------------------------------------- */
 
+.ict-background {
+  background-image: url(/assets/images/ICT_PICTURE.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(74, 74, 74);
+  background-blend-mode: multiply;
+}
 
+.full-width {
+	left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
+}
+
+.description {
+  font-size: calc(0.75rem + 1vw) !important;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------- */
@@ -198,6 +278,13 @@ body {
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
+
+.five-x-five {
+  max-height: 250px;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+}
 
 /* Center align the text within the three columns below the carousel */
 
@@ -271,10 +358,24 @@ body {
     transition: 0.3s ease-in-out;
   }
 
+  .five-x-five {
+    max-height: 250px;
+  }
+
 }
 
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+
+  .five-x-five {
+    max-height: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .flex-md-equal>* {
+      flex: 1;
   }
 }
