@@ -45,6 +45,7 @@ body {
     --main-color-six: #f300b2;
     --main-color-seven: #b200ff;
     --main-color-eight: #6600ff;
+    --main-pink: #dd407f;
 
     --main-font-type: 'Maragsa', serif;
     --accent-font-type: 'Amateur Camcorder', serif;
@@ -223,6 +224,10 @@ body {
   top: 0;
   left: 0;
   position: absolute;
+}
+
+.text-accent {
+  color: var(--main-pink);
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------- */
