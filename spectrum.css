@@ -176,8 +176,13 @@ body {
 #spectrum-logo {
   height: 3.25rem;
   margin-right: 1rem;
+  background: none;
+  transition: filter .25s ease-in-out,background-color .25s ease-in-out,border-color .25s ease-in-out;;
 }
 
+#spectrum-logo:hover {
+  filter: invert(1);
+}
 .no-space {
   justify-content: flex-start !important;
 }
@@ -190,11 +195,11 @@ body {
 -------------------------------------------- */
 
 .ict-background {
-  background-image: url(/assets/images/ICT_PICTURE.jpg);
-  background-position: center;
-  background-size: cover;
-  background-color: rgb(74, 74, 74);
-  background-blend-mode: multiply;
+  background-image: url(/assets/images/ICT_PICTURE.jpg); 
+}
+
+.shs-background {
+  background-image: url(/assets/images/announcements.png);
 }
 
 .full-width {
@@ -353,6 +358,34 @@ body {
   font-size: 1.25rem;
 }
 
+/* CARD AND LOGO CSS
+-------------------------------------------------- */
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.col>.card {
+  transition: 0.2s ease-in-out;
+}
+
+.card > img {
+  max-height: 17rem;
+  object-fit: cover;
+  aspect-ratio: 9 / 17;
+}
+
+.navbar-toggler-icon {
+  transition: filter .25s ease-in-out,background-color .25s ease-in-out,border-color .25s ease-in-out, transform .25s ease-in-out;
+}
+
+.navbar-toggler-icon:hover {
+  transform: scale(1.2) rotate(-5deg);
+  filter: invert(1);
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -382,6 +415,10 @@ body {
     max-height: 250px;
   }
 
+  .col>.card:hover {
+    transform: scale(1.1);
+  }
+
 }
 
 @media (min-width: 62em) {
@@ -392,6 +429,7 @@ body {
   .five-x-five {
     max-height: 350px;
   }
+
 }
 
 @media (min-width: 768px) {
