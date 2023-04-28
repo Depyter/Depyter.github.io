@@ -376,7 +376,6 @@ body {
 .card > img {
   max-height: 17rem;
   object-fit: cover;
-  aspect-ratio: 9 / 17;
 }
 
 .navbar-toggler-icon {
