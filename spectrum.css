@@ -361,6 +361,7 @@ body {
 /* CARD AND LOGO CSS
 -------------------------------------------------- */
 
+
 .card-text {
     display: -webkit-box;
     -webkit-line-clamp: 6;
@@ -368,7 +369,7 @@ body {
     overflow: hidden;
 }
 
-.col>.card {
+.col {
   transition: 0.2s ease-in-out;
 }
 
@@ -415,7 +416,8 @@ body {
     max-height: 250px;
   }
 
-  .col>.card:hover {
+  .col:hover {
+    z-index: 999;
     transform: scale(1.1);
   }
 
